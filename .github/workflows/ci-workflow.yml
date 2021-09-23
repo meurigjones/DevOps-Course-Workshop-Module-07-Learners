@@ -30,7 +30,7 @@ jobs:
       working-directory: DotnetTemplate.Web
       run: |
         npm t
-        run npm lint
+        npm run lint
 
 
 
