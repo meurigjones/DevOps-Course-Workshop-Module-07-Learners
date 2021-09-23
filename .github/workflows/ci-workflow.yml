@@ -15,19 +15,19 @@ jobs:
         who-to-greet: 'Mona the Octocat'
 
     - name: Build dotnet
-      uses: run dotnet build
+      run: dotnet build       
 
     - name: Run npm
-      uses: DotnetTemplate.Web/npm run build
+      run: DotnetTemplate.Web/npm run build
 
     - name: Test dotnet
-      uses: DotnetTemplate.Web/dotnet test
+      run: DotnetTemplate.Web/dotnet test
 
     - name: npm tests
-      uses: DotnetTemplate.Web/npm t
+      run: DotnetTemplate.Web/npm t
 
     - name: npm lint
-      uses: DotnetTemplate.Web/run npm lint
+      run: DotnetTemplate.Web/run npm lint
 
 
 
