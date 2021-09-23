@@ -18,16 +18,16 @@ jobs:
       run: dotnet build       
 
     - name: Run npm
-      run: DotnetTemplate.Web/npm run build
+      run: npm run build
 
     - name: Test dotnet
-      run: DotnetTemplate.Web/dotnet test
+      run: dotnet test
 
     - name: npm tests
-      run: DotnetTemplate.Web/npm t
+      run: npm t
 
     - name: npm lint
-      run: DotnetTemplate.Web/run npm lint
+      run: run npm lint
 
 
 
