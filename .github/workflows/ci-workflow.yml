@@ -18,7 +18,7 @@ jobs:
       run: dotnet build  
 
     - name: Install and run npm
-      working-directory: cd /DotnetTemplate.web
+      working-directory: DotnetTemplate.web
       run: |
         npm install     
         npm run build
@@ -27,7 +27,7 @@ jobs:
       run: dotnet test
 
     - name: npm tests and lint
-      working-directory: cd /DotnetTemplate.web
+      working-directory: DotnetTemplate.web
       run: |
         npm t
         run npm lint
