@@ -1,4 +1,3 @@
-```yaml
 name: Continuous Integration
 on: [push]
 
@@ -12,4 +11,3 @@ jobs:
 
     - name: Hello world       # Name of step
       run: echo 'Hello world' # Command to run
-```
