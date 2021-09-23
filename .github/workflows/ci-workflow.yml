@@ -15,19 +15,22 @@ jobs:
         who-to-greet: 'Mona the Octocat'
 
     - name: Build dotnet
-      run: dotnet build       
+      run: dotnet build  
 
-    - name: Run npm
-      run: npm run build
+    - name: Install and run npm
+      working-directory: cd /DotnetTemplate.web
+      run: |
+        npm install     
+        npm run build
 
     - name: Test dotnet
       run: dotnet test
 
-    - name: npm tests
-      run: npm t
-
-    - name: npm lint
-      run: run npm lint
+    - name: npm tests and lint
+      working-directory: cd /DotnetTemplate.web
+      run: |
+        npm t
+        run npm lint
 
 
 
